@@ -28,9 +28,12 @@ const pesquisarCep = async() => {
     const endereco = await dados.json();
 
     if(endereco.hasOwnProperty('erro')){
-        document.getElementById('endereco').value = "CEP INVÁLIDO";
+        document.querySelector('.erro').textContent = "CEP INVÁLIDO";
+        document.getElementById('cep').value = "";
+        document.getElementById('cep').focus();
     } else {
         preencherFormulario(endereco);
+        document.querySelector('.erro').textContent = "";
     }
     
 }

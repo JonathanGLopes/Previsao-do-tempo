@@ -8,3 +8,7 @@
 
 ### API
 - API utilizada foi a do viaCEP.
+
+### Captura de tela
+
+<img width="800" src="demo.png">
